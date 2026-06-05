@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Next Chat</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <!-- LOGIN SCREEN -->
+        <div id="login-screen" class="login-screen">
+            <div class="login-bg">
+                <div class="grid-overlay"></div>
+                <div class="glow-blob blob-1"></div>
+                <div class="glow-blob blob-2"></div>
+            </div>
+            <div class="login-card">
+                <div class="login-logo">
+                    <span class="logo-icon">⬡</span>
+                    <span class="logo-name">NEXT</span>
+                </div>
+
+                <p class="login-subtitle">
+                    Masukkan tanda panggilan Anda untuk terhubung
+                </p>
+
+                <div class="input-group">
+                    <input
+                        type="text"
+                        id="username-input"
+                        class="text-input"
+                        placeholder="NAMA_KAMU"
+                        maxlength="20"
+                        autocomplete="off"
+                    />
+                    <div class="input-underline"></div>
+                </div>
+
+                <div class="input-group" style="margin-top: 12px">
+                    <input
+                        type="text"
+                        id="room-input"
+                        class="text-input"
+                        placeholder="KODE_ROOM (optional)"
+                        maxlength="20"
+                        autocomplete="off"
+                    />
+                    <div class="input-underline"></div>
+                </div>
+
+                <button id="join-btn" class="btn-primary">
+                    <span class="btn-text">Connect</span>
+                    <span class="btn-arrow">-></span>
+                </button>
+
+                <p class="login-hint">
+                    Tidak diperlukan akun. Hanya sebuah nama.
+                </p>
+            </div>
+        </div>
+
+        <!-- CHAT SCREEN -->
+        <div id="chat-screen" class="screen">
+            <aside class="sidebar">
+                <div class="sidebar-header">
+                    <div class="sidebar-logo">
+                        <span class="logo-icon">⬡</span>
+                        <span class="logo-text">NEXT</span>
+                    </div>
+                </div>
+
+                <div class="room-section">
+                    <div class="section-label">RUANGAN</div>
+                    <ul id="room-list" class="room-list"></ul>
+                    <div class="new-room-row">
+                        <input
+                            type="text"
+                            id="new-room-input"
+                            class="small-input"
+                            placeholder="room baru..."
+                            maxlength="20"
+                        />
+                        <button
+                            id="create-room-btn"
+                            class="icon-btn"
+                            title="Create room"
+                        >
+                            +
+                        </button>
+                    </div>
+                </div>
+
+                <div class="online-screen">
+                    <div class="section-label">
+                        ONLINE - <span id="online-count">0</span>
+                    </div>
+                    <ul id="online-list" class="online-list"></ul>
+                </div>
+
+                <div class="sidebar-footer">
+                    <div class="my-avatar" id="my-avatar"></div>
+                    <div class="my-info">
+                        <span class="my-name" id="my-name-display"></span>
+                        <span class="my-status">● Online</span>
+                    </div>
+                    <button
+                        id="logout-btn"
+                        class="logout-btn"
+                        title="Disconnect"
+                    >
+                        ⏻
+                    </button>
+                </div>
+            </aside>
+        </div>
+    </body>
+</html>
