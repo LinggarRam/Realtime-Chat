@@ -1,0 +1,39 @@
+:root {
+    --bg-0: #0a0a0f;
+    --bg-1: #10101a;
+    --bg-2: #161622;
+    --bg-3: #1e1e2e;
+    --bg-4: #252538;
+    
+    --accent: #00f5c4;
+    --accent-dim: #00c49a;
+    --accent-glow: rgba(0, 245, 196, 0.15);
+    --accent-glow-strong: rgba(0, 245, 196, 0.35);
+    
+    --danger: #ff4757;
+    --warn: #ffa502;
+    
+    --text-0: #eeeef5;
+    --text-1: #b0b0c8;
+    --text-2: #6a6a88;
+    --text-3: #3a3a55;
+    
+    --border: rgba(255,255,255,0.06);
+    --border-accent: rgba(0, 245, 196, 0.3);
+    
+    --font-display: 'Syne', sans-serif;
+    --font-mono: 'Space Mono', monospace;
+    
+    --radius: 4px;
+    --radius-lg: 10px;
+    --transition: 0.18s cubic-bezier(0.4, 0, 0.2, 1);
+    
+    --sidebar-w: 240px;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
