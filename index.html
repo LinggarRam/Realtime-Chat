@@ -25,18 +25,16 @@
                     <span class="logo-name">NEXT</span>
                 </div>
 
-                <p class="login-subtitle">
-                    Masukkan tanda panggilan Anda untuk terhubung
-                </p>
+                <p class="login-subtitle">Masukkan tanda panggilan Anda untuk terhubung</p>
 
                 <div class="input-group">
-                    <input
-                        type="text"
-                        id="username-input"
-                        class="text-input"
-                        placeholder="NAMA_KAMU"
-                        maxlength="20"
-                        autocomplete="off"
+                    <input 
+                        type="text" 
+                        id="username-input" 
+                        class="text-input" 
+                        placeholder="NAMA_KAMU" 
+                        maxlength="20" 
+                        autocomplete="off" 
                     />
                     <div class="input-underline"></div>
                 </div>
@@ -58,9 +56,7 @@
                     <span class="btn-arrow">-></span>
                 </button>
 
-                <p class="login-hint">
-                    Tidak diperlukan akun. Hanya sebuah nama.
-                </p>
+                <p class="login-hint">Tidak diperlukan akun. Hanya sebuah nama.</p>
             </div>
         </div>
 
@@ -85,11 +81,7 @@
                             placeholder="room baru..."
                             maxlength="20"
                         />
-                        <button
-                            id="create-room-btn"
-                            class="icon-btn"
-                            title="Create room"
-                        >
+                        <button id="create-room-btn" class="icon-btn" title="Create room">
                             +
                         </button>
                     </div>
@@ -108,11 +100,7 @@
                         <span class="my-name" id="my-name-display"></span>
                         <span class="my-status">● Online</span>
                     </div>
-                    <button
-                        id="logout-btn"
-                        class="logout-btn"
-                        title="Disconnect"
-                    >
+                    <button id="logout-btn" class="logout-btn" title="Disconnect">
                         ⏻
                     </button>
                 </div>
@@ -122,23 +110,13 @@
                 <header class="chat-header">
                     <div class="chat-room-info">
                         <span class="room-hash">#</span>
-                        <span class="room-name" id="current-room-name"
-                            >general</span
-                        >
+                        <span class="room-name" id="current-room-name">general</span>
                     </div>
                     <div class="header-actions">
-                        <button
-                            class="header-btn"
-                            id="clear-btn"
-                            title="Clear messages"
-                        >
+                        <button class="header-btn" id="clear-btn" title="Clear messages">
                             Clear
                         </button>
-                        <button
-                            class="header-btn mobile-only"
-                            id="sidebar-toggle"
-                            title="Toggle sidebar"
-                        >
+                        <button class="header-btn mobile-only" id="sidebar-toggle" title="Toggle sidebar">
                             ☰
                         </button>
                     </div>
@@ -156,43 +134,29 @@
 
                 <footer class="chat-footer">
                     <div class="message-input-wrap">
-                        <button
-                            id="emoji-btn"
-                            class="emoji-toggle-btn"
-                            title="Emoji"
-                        >
+                        <button id="emoji-btn" class="emoji-toggle-btn" title="Emoji">
                             😊
                         </button>
-                        <div
-                            id="emoji-picker"
-                            class="emoji-picker hidden"
-                        ></div>
+                        <div id="emoji-picker" class="emoji-picker hidden"></div>
                         <textarea
                             id="message-input"
                             class="message-textarea"
                             placeholder="Message #general..."
                             rows="1"
-                            maxlength="1000"
-                        ></textarea>
+                            maxlength="1000">
+                        </textarea>
                         <button id="send-btn" class="send-btn" title="Send">
-                            <svg
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="2"
-                            >
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <line x1="22" y1="2" x2="11" y2="13"></line>
-                                <polygon
-                                    points="22 2 15 22 11 13 2 9 22 2"
-                                ></polygon>
+                                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
                             </svg>
                         </button>
                     </div>
                     <div class="footer-meta">
                         <span id="char-count" class="char-count">0 / 1000</span>
-                        <span class="footer-hint"
-                            >Enter to send · Shift+Enter for new line</span
-                        >
+                        <span class="footer-hint">
+                            Enter to send · Shift+Enter for new line
+                        </span>
                     </div>
                 </footer>
             </main>
